@@ -1,0 +1,189 @@
+// HTML Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="product.jpg" alt="Product Name">
+            </div>
+            <div class="product-details">
+                <h1>Product Name</h1>
+                <p class="description">This is a detailed description of the product. It highlights the key features and benefits to entice potential buyers.</p>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="related1.jpg" alt="Related Product 1">
+                    <p>Related Product 1</p>
+                    <p>$29.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="related2.jpg" alt="Related Product 2">
+                    <p>Related Product 2</p>
+                    <p>$39.99</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p><strong>ABC</strong> - "Great product, highly recommend!"</p>
+            </div>
+            <div class="review">
+                <p><strong>XYZ</strong> - "Good value for money."</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 E-Commerce Website</p>
+    </footer>
+</body>
+</html>
+
+//CSS Code
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-details {
+    max-width: 500px;
+    margin: 20px;
+}
+
+.product-details h1 {
+    margin-bottom: 20px;
+}
+
+.product-details .price {
+    font-size: 1.5em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.product-details .add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-details .add-to-cart:hover {
+    background-color: #218838;
+}
+
+.related-products,
+.customer-reviews {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-products h2,
+.customer-reviews h2 {
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-item {
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+.product-item p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
